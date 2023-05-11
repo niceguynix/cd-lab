@@ -18,11 +18,11 @@ void print(int arr[]){
 
 %%
 program:
-program statement '\n'
+program statement '\n' {printf("Valid\n") ;}
 | /* NULL */
 ;
 statement:
-expression { printf("%d\n", $1); }
+expression /*{printf("%d\n",$1);}*/
 | VARIABLE '=' expression {/* printf ("Node = %d\n",$3);*/ sym[$1] = $3;}
 ;
 expression:
