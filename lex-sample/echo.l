@@ -1,6 +1,5 @@
 %%
 . ECHO;
-\n ECHO;
 %%
 
 int yywrap(void)

@@ -12,5 +12,5 @@ int yywrap(void){
 }
 
 int main(){
-        yylex();
+    yylex();
 }
