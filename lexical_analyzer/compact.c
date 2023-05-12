@@ -51,10 +51,10 @@ void lexanalysis(char * str) {
     if (Isiden(str[i])) //for identifiers
     {
       while (Isiden(str[i])) {
-        iden[idi][idj++] = str[i++];
+        uqiden[uqidi][idj++] = str[i++];
       }
-      iden[idi][idj] = '\0';
-      idi++;
+      uqiden[uqidi][idj] = '\0';
+      uqidi++;
       idj = 0;
     } else
     if (str[i] == '"') //for literals
