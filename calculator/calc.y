@@ -16,7 +16,7 @@ program statement '\n'
 ;
 statement:
 expression {printf("%d\n",$1);}
-| VARIABLE '=' expression {/* printf ("Node = %d\n",$3);*/ sym[$1] = $3;}
+| VARIABLE '=' expression { printf ("Node %c = %d\n",$1,$3); sym[$1] = $3;}
 ;
 expression:
 INTEGER
